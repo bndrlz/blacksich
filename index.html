@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Срібна Січ: Чорноліс</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1 class="logo">Срібна Січ: Чорноліс</h1>
+  </header>
+
+  <!-- Передісторія -->
+  <div class="intro-section">
+    <p>Після вибуху на ЧАЕС у 1986 році щось темне просочилось у світ людей.
+      Радіація стала не єдиною загрозою — у тріщинах між світами прокинулася давня Тінь.
+      Відлуння Чорнобиля збурило сили, що спали в надрах української землі.
+      У глибинах Чорнолісу пробудилися герої — створіння з болю, світла та надії.
+      Вони не звичайні люди — вони втілення сили предків, гніву землі та незламності духу.
+      Тепер їм судилося захистити Срібну Січ — останній форпост волі — від навали мороку рашистської тіні.
+    </p>
+
+    <div class="name-input">
+      <input type="text" id="user-name" placeholder="Введи своє ім’я" />
+      <button onclick="saveName()">Зберегти ім’я</button>
+    </div>
+  </div>
+
+  <!-- Тут буде збережене ім'я, якщо користувач його введе -->
+  <div id="greeting"></div>
+
+  <!-- Тест -->
+  <section class="test-section">
+    <div class="quiz-layout">
+      <!-- Ліва частина -->
+      <div class="quiz-box">
+        <form id="quiz-form">
+          <div id="question-container"></div>
+          <button type="button" id="next-button">Відповісти</button>
+          <button type="submit" id="submit-button" class="hidden">Результат</button>
+        </form>
+      </div>
+
+      <!-- Права частина -->
+      <div id="result" class="result-box">
+        <div id="character-image"></div>
+        <div id="character-description"></div>
+        <button id="start-game-btn" class="hidden"></button> <!-- Кнопка для вибору персонажа -->
+      </div>
+    </div>
+  </section>
+
+  <div id="story-block" class="hidden">
+    <p id="story-text"></p>
+    <div id="choices"></div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
