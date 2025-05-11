@@ -1,185 +1,185 @@
-/* ====== Основні стилі ====== */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background: #121212;
-    color: #e0e0e0;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* ====== Основні стилі ====== */ 
+body {     
+    font-family: 'Roboto', sans-serif;     
+    line-height: 1.6;     
+    background: #121212;     
+    color: #e0e0e0;     
+    max-width: 800px;     
+    margin: 0 auto;     
+    padding: 20px; 
+}  
 
-/* Контейнер */
-.container {
-    background: #1e1e1e;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
-    padding: 25px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
-}
+/* Контейнер */ 
+.container {     
+    background: #1e1e1e;     
+    border-radius: 12px;     
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);     
+    padding: 25px;     
+    margin-bottom: 20px;     
+    transition: transform 0.3s ease; 
+}  
 
-.container:hover {
-    transform: scale(1.01);
-}
+.container:hover {     
+    transform: scale(1.01); 
+}  
 
-/* Заголовки */
-h1, h2 {
-    color: #00f6ff;
-    text-align: center;
-    text-shadow: 0 0 15px #00f6ff;
-}
+/* Заголовки */ 
+h1, h2 {     
+    color: #00f6ff;     
+    text-align: center;     
+    text-shadow: 0 0 15px #00f6ff; 
+}  
 
-/* Питання */
-.question {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    background: #2a2a2a;
-}
+/* Питання */ 
+.question {     
+    margin-bottom: 20px;     
+    padding: 15px;     
+    border-radius: 8px;     
+    background: #2a2a2a; 
+}  
 
-/* Варіанти відповіді */
-.option, .story-choice {
-    display: block;
-    padding: 12px 18px;
-    margin: 8px 0;
-    border-radius: 8px;
-    background: #333;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-}
+/* Варіанти відповіді */ 
+.option, .story-choice {     
+    display: block;     
+    padding: 12px 18px;     
+    margin: 8px 0;     
+    border-radius: 8px;     
+    background: #333;     
+    cursor: pointer;     
+    transition: background 0.3s, transform 0.2s; 
+}  
 
-.option:hover, .story-choice:hover {
-    background: #444;
-    transform: translateX(3px);
-}
+.option:hover, .story-choice:hover {     
+    background: #444;     
+    transform: translateX(3px); 
+}  
 
-/* Кнопки */
-button {
-    background: #00f6ff;
-    color: #000;
-    border: none;
-    padding: 14px 24px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    display: block;
-    margin: 30px auto;
-    transition: background 0.3s, transform 0.2s;
-}
+/* Кнопки */ 
+button {     
+    background: #00f6ff;     
+    color: #000;     
+    border: none;     
+    padding: 14px 24px;     
+    font-size: 18px;     
+    border-radius: 8px;     
+    cursor: pointer;     
+    display: block;     
+    margin: 30px auto;     
+    transition: background 0.3s, transform 0.2s; 
+}  
 
-button:hover {
-    background: #00c8d7;
-    transform: scale(1.05);
-}
+button:hover {     
+    background: #00c8d7;     
+    transform: scale(1.05); 
+}  
 
-/* Результат */
-#result {
-    text-align: center;
-}
+/* Результат */ 
+#result {     
+    text-align: center; 
+}  
 
-/* Блок результату */
-.result-container {
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 20px;
-    display: none;
-}
+/* Блок результату */ 
+.result-container {     
+    background: #1a1a1a;     
+    padding: 20px;     
+    border-radius: 12px;     
+    margin-top: 20px;     
+    display: none; 
+}  
 
-/* Зображення */
-.hero-image {
+/* Зображення */ 
+.hero-image {     
     max-width: 85%;
-    height: 620px;
-    border-radius: 12px;
-    margin: 0px 150px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-}
-
-/* Історія */
-.story-container {
-    display: none;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 12px;
-}
-
-.story-scene {
-    margin-bottom: 20px;
-}
-
-.story-text {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: #ccc;
-}
-
-.story-choices {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* Службові класи */
-.hidden {
-    display: none;
-}
-.visible {
+    height: auto;
+    border-radius: 12px;     
     display: block;
-}
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2); 
+}  
 
-/* ====== Адаптація для мобільних ====== */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-        font-size: 14px;
-    }
+/* Історія */ 
+.story-container {     
+    display: none;     
+    background: #1a1a1a;     
+    padding: 20px;     
+    border-radius: 12px; 
+}  
 
-    .container {
-        padding: 15px;
-        border-radius: 10px;
-    }
+.story-scene {     
+    margin-bottom: 20px; 
+}  
 
-    h1, h2 {
-        font-size: 1.6rem;
-        text-shadow: 0 0 10px #00f6ff;
-    }
+.story-text {     
+    font-size: 18px;     
+    margin-bottom: 15px;     
+    color: #ccc; 
+}  
 
-    .question {
-        padding: 12px;
-    }
+.story-choices {     
+    display: flex;     
+    flex-direction: column;     
+    gap: 12px; 
+}  
 
-    .option, .story-choice {
-        padding: 10px 12px;
-        font-size: 14px;
-    }
+/* Службові класи */ 
+.hidden {     
+    display: none; 
+} 
+.visible {     
+    display: block; 
+}  
 
-    button {
-        font-size: 16px;
-        padding: 10px 18px;
-    }
-
-    .hero-image {
-        width: 100%;
+/* ====== Адаптація для мобільних ====== */ 
+@media (max-width: 600px) {     
+    body {         
+        padding: 10px;         
+        font-size: 14px;     
+    }      
+    
+    .container {         
+        padding: 15px;         
+        border-radius: 10px;     
+    }      
+    
+    h1, h2 {         
+        font-size: 1.6rem;         
+        text-shadow: 0 0 10px #00f6ff;     
+    }      
+    
+    .question {         
+        padding: 12px;     
+    }      
+    
+    .option, .story-choice {         
+        padding: 10px 12px;         
+        font-size: 14px;     
+    }      
+    
+    button {         
+        font-size: 16px;         
+        padding: 10px 18px;     
+    }      
+    
+    .hero-image {         
+        width: 100%;         
         max-width: 100%;
         height: auto;
-        margin: 16px 0;
-        border-radius: 10px;
-    }
+        margin: 16px auto;
+        border-radius: 10px;     
+    }           
     
-
-    .result-container,
-    .story-container {
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .story-text {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .story-choices {
-        gap: 10px;
-    }
+    .result-container,     
+    .story-container {         
+        padding: 15px;         
+        border-radius: 10px;     
+    }      
+    
+    .story-text {         
+        font-size: 16px;         
+        line-height: 1.5;     
+    }      
+    
+    .story-choices {         
+        gap: 10px;     
+    } 
 }
