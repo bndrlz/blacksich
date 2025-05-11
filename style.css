@@ -89,7 +89,7 @@ button:hover {
 
 /* Зображення */ 
 .hero-image {     
-    max-width: 85%;
+    max-width: 400px;
     height: auto;
     border-radius: 12px;     
     display: block;
@@ -162,7 +162,7 @@ button:hover {
     
     .hero-image {         
         width: 100%;         
-        max-width: 100%;
+        max-width: 250px;
         height: auto;
         margin: 16px auto;
         border-radius: 10px;     
